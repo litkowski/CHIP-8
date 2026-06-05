@@ -3,9 +3,9 @@
 #include <pthread.h>
 
 int init_sdl();
-int clear_display();
-void update_display();
-int key_wait();
+int clear_display(pthread_mutex_t* lock);
+void update_display(pthread_mutex_t* lock);
+int key_wait(char keys[16]);
 int update_state(char* keys);
 int draw_sprite(char* sprite, char height, char x, char y, pthread_mutex_t* lock);
 int quit_sdl();

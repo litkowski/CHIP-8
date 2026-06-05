@@ -18,22 +18,22 @@ int running = 1;
 int font_get(char number){
 
         switch(number) {
-            case 0: return 0;
-            case 1: return 5;
-            case 2: return 10;
-            case 3: return 15;
-            case 4: return 20;
-            case 5: return 25;
-            case 6: return 30;
-            case 7: return 35;
-            case 8: return 40;
-            case 9: return 45;
-            case 0xA: return 50;
-            case 0xB: return 55;
-            case 0xC: return 60;
-            case 0xD: return 65;
-            case 0xE: return 70;
-            case 0xF: return 75;
+            case 0:     return 0;
+            case 1:     return 5;
+            case 2:     return 10;
+            case 3:     return 15;
+            case 4:     return 20;
+            case 5:     return 25;
+            case 6:     return 30;
+            case 7:     return 35;
+            case 8:     return 40;
+            case 9:     return 45;
+            case 0xA:   return 50;
+            case 0xB:   return 55;
+            case 0xC:   return 60;
+            case 0xD:   return 65;
+            case 0xE:   return 70;
+            case 0xF:   return 75;
         }
 
         return 80;
@@ -536,7 +536,7 @@ int main(int args, char* argv[]){
 
         //Print newline, move to next instruction
         pc+= 2;
-        SDL_Delay(2);
+        SDL_Delay(1);
 
     }
 
